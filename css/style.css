@@ -1233,6 +1233,7 @@ input {
     .home-title {
         font-size: 2rem;
         line-height: 42px;
+        min-height: 90px;
     }
 
     .home-subtitle {
@@ -1243,6 +1244,7 @@ input {
     #typing-text {
         display: block;
         margin-top: 5px;
+        min-height: 42px;
     }
 
     .home p {
@@ -1329,6 +1331,7 @@ input {
     .home-title {
         font-size: 1.7rem;
         line-height: 36px;
+        min-height: 80px;
     }
 
     .home-subtitle {
@@ -1337,6 +1340,7 @@ input {
 
     #typing-text {
         display: block;
+        min-height: 36px;
     }
 
     .home p {
