@@ -421,6 +421,9 @@ img {
     position: absolute;
     inset: 0;
     background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 18px;
     opacity: 0;
     visibility: hidden;
