@@ -932,6 +932,20 @@ input {
     filter: grayscale(20%);
 }
 
+.social-link {
+    text-decoration: none;
+    transition: var(--fast-transition);
+    font-size: .8rem;
+    color: var(--heading-color);
+    word-break: break-word;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 
 
 /* Footer Styling */
