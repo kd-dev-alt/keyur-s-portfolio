@@ -11,6 +11,7 @@ let filterBtns = document.querySelectorAll(".filter-btn");
 let skillCards = document.querySelectorAll(".skill-card");
 let sections = document.querySelectorAll("main");
 let reveals = document.querySelectorAll(".reveal, .left-reveal, .right-reveal");
+let projectCards = document.querySelectorAll(".card");
 
 
 // Logo Clicked
@@ -149,3 +150,17 @@ function typeEffect() {
     setTimeout(typeEffect, speed);
 }
 typeEffect();
+
+projectCards.forEach((card) => {
+    card.addEventListener("click", () => {
+        // Mobile only
+        if (window.innerWidth <= 768) {
+            projectCards.forEach((item) => {
+                if (item !== card) {
+                    item.classList.remove("show-icons");
+                }
+            });
+            card.classList.toggle("show-icons");
+        }
+    });
+});

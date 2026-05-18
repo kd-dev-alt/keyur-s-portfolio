@@ -423,11 +423,18 @@ img {
     background: rgba(17, 24, 39, 0.55);
     gap: 18px;
     opacity: 0;
+    visibility: hidden;
     transition: var(--fast-transition);
 }
 
 .card:hover .git-btn {
     opacity: 1;
+    visibility: visible;
+}
+
+.card.show-icons .git-btn {
+    opacity: 1;
+    visibility: visible;
 }
 
 .git-btn a {
