@@ -1,12 +1,17 @@
 # 💼 Keyur Dobariya — Developer Portfolio
 
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/Responsive-Design-10B981?style=for-the-badge)
+
 A modern and fully responsive personal portfolio website built using HTML, CSS, and JavaScript.
 
 This portfolio showcases my frontend development projects, skills, internship experience, and contact information with smooth animations and a clean user interface.
 
 ---
 
-## 🚀 Live Preview
+## 🚀 Live Demo
 
 🔗 Live Website: https://kd-dev-alt.github.io/Keyur-s-Portfolio/
 
@@ -18,6 +23,12 @@ This portfolio showcases my frontend development projects, skills, internship ex
 
 ---
 
+## 📱 Mobile Preview
+
+![Mobile Preview](assets/images/mobile-preview.png)
+
+---
+
 ## ✨ Features
 
 - Modern & Clean UI Design
@@ -26,21 +37,24 @@ This portfolio showcases my frontend development projects, skills, internship ex
 - Animated Reveal Effects
 - Typing Text Animation
 - Skills Filter System
+- Interactive Project Cards
 - Mobile Hamburger Menu
 - Scroll To Top Button
-- Interactive Project Cards
-- Resume Preview Button
-- Contact Section with Map
-- Optimized for All Devices
+- Resume Download Button
+- Certifications & Experience Sections
+- Contact Section with Google Maps
+- Optimized for Mobile, Tablet & Desktop
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
+| Technology | Usage |
+|------------|-------|
+| HTML5 | Structure |
+| CSS3 | Styling & Responsive Design |
+| JavaScript | Interactivity & Animations |
+| Font Awesome | Icons |
 
 ---
 
@@ -79,6 +93,15 @@ Portfolio/
 
 ---
 ## 📌 Featured Projects
+
+### 🌐 Developer Portfolio
+A modern personal portfolio website showcasing projects, skills, experience, certifications, and contact information.
+
+**Tech Stack:** HTML, CSS, JavaScript  
+**Live Demo:** https://kd-dev-alt.github.io/Keyur-s-Portfolio/  
+**GitHub:** https://github.com/KD-dev-alt/Keyur-s-Portfolio
+
+---
 
 ### 🍕 FoodiePizza App
 A responsive pizza ordering website with a clean UI, interactive food cards, categorized menu sections, and mobile-friendly layout.
@@ -134,6 +157,15 @@ A modern e-commerce product card interface with hover effects, pricing, ratings,
 
 ---
 
+### ⏰ Digital Clock — Analog & Digital Time App
+A modern clock application featuring analog and digital time display, live date, smooth animations, and dark-themed responsive UI.
+
+**Tech Stack:** HTML, CSS, JavaScript  
+**Live Demo:** https://kd-dev-alt.github.io/Modern-Analog-Digital-Clock/  
+**GitHub:** https://github.com/KD-dev-alt/Modern-Analog-Digital-Clock
+
+---
+
 # 📄 License
 
 This project is open source and available under the MIT License.
@@ -144,7 +176,15 @@ This project is open source and available under the MIT License.
 
 **Keyur Dobariya**
 
-Frontend Developer & Web Developer
+Frontend Developer
 
+- Portfolio: https://kd-dev-alt.github.io/Keyur-s-Portfolio/
 - GitHub: https://github.com/KD-dev-alt
+- LinkedIn: https://www.linkedin.com/in/keyur-dobariya-dev
 - Email: keyur.dobariya.dev@gmail.com
+
+---
+
+---
+
+⭐ If you like this project, feel free to star the repository and connect with me on LinkedIn!

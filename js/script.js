@@ -1,7 +1,6 @@
 let logo = document.getElementById("logo");
 let primaryBtn = document.getElementById("primary-btn");
 let secondaryBtn = document.getElementById("secondary-btn");
-let hireBtn = document.getElementById("hire-btn");
 let topBtn = document.getElementById("top-btn");
 let menuToggle = document.getElementById("menu-toggle");
 let typingText = document.getElementById("typing-text");
@@ -16,13 +15,10 @@ let projectCards = document.querySelectorAll(".card");
 
 // Logo Clicked
 logo.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+  window.location.href = "index.html";
 });
 
-// Home View my Work Button
+// Home View Projects Button
 primaryBtn.addEventListener("click", () => {
     document.getElementById("project").scrollIntoView({
         behavior: "smooth"
@@ -31,14 +27,6 @@ primaryBtn.addEventListener("click", () => {
 
 // Home Get in Touch Button
 secondaryBtn.addEventListener("click", () => {
-    document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-// About Hire Button
-hireBtn.addEventListener("click", () => {
-    alert("Thank You for Hire Me!");
     document.getElementById("contact").scrollIntoView({
         behavior: "smooth"
     });
