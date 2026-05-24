@@ -61,7 +61,7 @@ This portfolio showcases my frontend development projects, skills, internship ex
 ## 📂 Folder Structure
 
 ```bash
-Portfolio/
+Keyur-s-Portfolio/
 │
 ├── index.html
 │
@@ -72,10 +72,13 @@ Portfolio/
 │   └── script.js
 │
 ├── assets/
+│   │
 │   ├── images/
+│   │   ├── desktop-preview.png
+│   │   ├── mobile-preview.png
 │   │   ├── foodiepizza.png
 │   │   ├── Landing-Page.png
-│   │   ├── portfolio-preview.png
+│   │   ├── digital-clock.png
 │   │   ├── product-card.png
 │   │   ├── quiz-app.png
 │   │   ├── responsive-webpage.png
