@@ -19,7 +19,7 @@ This portfolio showcases my frontend development projects, skills, internship ex
 
 ## 📸 Project Preview
 
-![Portfolio Preview](assets/images/portfolio-preview.png)
+![Portfolio Preview](assets/images/desktop-preview.png)
 
 ---
 
