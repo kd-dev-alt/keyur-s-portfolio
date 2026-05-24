@@ -94,15 +94,6 @@ Portfolio/
 ---
 ## 📌 Featured Projects
 
-### 🌐 Developer Portfolio
-A modern personal portfolio website showcasing projects, skills, experience, certifications, and contact information.
-
-**Tech Stack:** HTML, CSS, JavaScript  
-**Live Demo:** https://kd-dev-alt.github.io/Keyur-s-Portfolio/  
-**GitHub:** https://github.com/KD-dev-alt/Keyur-s-Portfolio
-
----
-
 ### 🍕 FoodiePizza App
 A responsive pizza ordering website with a clean UI, interactive food cards, categorized menu sections, and mobile-friendly layout.
 
@@ -182,8 +173,6 @@ Frontend Developer
 - GitHub: https://github.com/KD-dev-alt
 - LinkedIn: https://www.linkedin.com/in/keyur-dobariya-dev
 - Email: keyur.dobariya.dev@gmail.com
-
----
 
 ---
 
