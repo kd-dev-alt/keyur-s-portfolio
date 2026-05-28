@@ -131,32 +131,44 @@ img {
   gap: 32px;
   font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.5px;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   user-select: none;
 }
 
-.nav-a li a {
-  transition: var(--fast-transition);
+.nav-a a {
   position: relative;
+  transition: var(--fast-transition);
 }
 
-.nav-a li a:hover {
-  color: #005236;
-  font-weight: bold;
-}
-
-.nav-a li a::after {
+.nav-a a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -5px;
+  left: 50%;
+  bottom: -6px;
   width: 0%;
   height: 1.5px;
   background: var(--primary-color);
   transition: var(--fast-transition);
+  border-radius: 50px;
+  transform: translateX(-50%);
+  transition: var(--fast-transition);
 }
 
-.nav-a li a:hover::after {
+.nav-a a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.nav-a a:hover::after {
+  width: 100%;
+}
+
+.nav-a a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-a a.active::after {
   width: 100%;
 }
 
@@ -215,6 +227,7 @@ img {
   line-height: 85px;
   font-size: var(--fs-3xl);
   color: var(--heading-color);
+  overflow-wrap: break-word;
 }
 
 #typing-text {
@@ -340,14 +353,14 @@ img {
 .about-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--hover-shadow);
-    border-color: rgba(0, 108, 73, 0.25);
+  border-color: rgba(0, 108, 73, 0.25);
 }
 
 .about-card h2 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--heading-color);
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .about-card p {
@@ -747,95 +760,95 @@ img {
 
 /* Education Styling */
 .education {
-    padding: 140px 70px 150px 120px;
+  padding: 140px 70px 150px 120px;
 }
 
 .education-card {
-    margin-top: 40px;
-    background: var(--white-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 32px;
-    box-shadow: var(--card-shadow);
-    transition: var(--fast-transition);
+  margin-top: 40px;
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--card-shadow);
+  transition: var(--fast-transition);
 }
 
 .education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--hover-shadow);
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
 }
 
 .edu-date {
-    font-size: .8rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    letter-spacing: .5px;
+  font-size: .8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
 .edu-degree {
-    margin: 14px 0 10px;
-    font-size: 1.5rem;
-    color: var(--heading-color);
-    font-family: "Cinzel", serif;
+  margin: 14px 0 10px;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  font-family: "Cinzel", serif;
 }
 
 .edu-college {
-    color: var(--text-color);
-    margin-bottom: 10px;
+  color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .edu-cgpa {
-    color: #6b7280;
-    font-size: .92rem;
+  color: #6b7280;
+  font-size: .92rem;
 }
 
 
 
 /* Certificate Styling */
 .certifications {
-    padding: 140px 70px 150px 120px;
+  padding: 140px 70px 150px 120px;
 }
 
 .certification-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
 }
 
 .cert-card {
-    background: var(--white-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 28px;
-    box-shadow: var(--card-shadow);
-    transition: var(--fast-transition);
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--card-shadow);
+  transition: var(--fast-transition);
 }
 
 .cert-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--hover-shadow);
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
 }
 
 .cert-org {
-    font-size: .78rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    letter-spacing: .5px;
+  font-size: .78rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
 .cert-title {
-    margin-top: 14px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: var(--heading-color);
+  margin-top: 14px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--heading-color);
 }
 
 .cert-desc {
-    margin-top: 12px;
-    font-size: .88rem;
-    line-height: 1.6;
-    color: #6b7280;
+  margin-top: 12px;
+  font-size: .88rem;
+  line-height: 1.6;
+  color: #6b7280;
 }
 
 
@@ -1149,17 +1162,41 @@ input {
 
 /* Media Query */
 
-/* Laptop Screen */
-@media (max-width: 1024px) {
+/* Large Laptop */
+@media (max-width: 1200px) {
   .nav-container {
     justify-content: space-between;
     padding: 0 40px;
   }
 
+  .home,
+  .about,
+  .project,
+  .experience,
+  .skills,
+  .education,
+  .certifications,
+  .contact {
+    padding-inline: 70px;
+  }
+
+  .home-title {
+    font-size: 3.8rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet / Small Laptop */
+@media (max-width: 1024px) {
   .menu-toggle {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .nav-btn {
@@ -1168,21 +1205,20 @@ input {
 
   .nav-a {
     position: absolute;
-    top: 80px;
+    top: 78px;
     right: 40px;
-    width: 250px;
+    width: 280px;
     background: var(--white-color);
     flex-direction: column;
-    align-items: flex-start;
     gap: 18px;
     padding: 24px;
-    border-radius: 16px;
     border: 1px solid var(--border-color);
+    border-radius: 16px;
     box-shadow: var(--hover-shadow);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s ease;
+    transition: var(--fast-transition);
   }
 
   .nav-a.active {
@@ -1199,27 +1235,25 @@ input {
   .mobile-resume .nav-btn {
     display: block;
     width: 100%;
-    margin-top: 8px;
+    text-align: center;
   }
 
   .home,
-.about,
-.project,
-.experience,
-.skills,
-.education,
-.certifications,
-.contact {
-  padding: 120px 40px;
-}
-
-  .home-title {
-    font-size: 3.2rem;
-    line-height: 65px;
+  .about,
+  .project,
+  .experience,
+  .skills,
+  .education,
+  .certifications,
+  .contact {
+    padding: 120px 40px;
   }
 
-  #typing-text {
-    display: inline-block;
+  .home-title {
+    font-size: 3rem;
+    line-height: 1.25;
+    height: auto;
+    min-height: 150px;
   }
 
   .home p,
@@ -1231,15 +1265,11 @@ input {
 
   .about {
     grid-template-columns: 1fr;
-    gap: 50px;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .about-img img {
+    width: 100%;
+    max-width: 420px;
   }
 
   .contact-container {
@@ -1249,70 +1279,50 @@ input {
   .e-card {
     width: 100%;
   }
+
+  .certification-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Tablet Screen */
+/* Tablet */
 @media (max-width: 768px) {
-  .home,
-.about,
-.project,
-.experience,
-.skills,
-.education,
-.certifications,
-.contact {
-  padding: 170px 40px 100px;
-}
-
   .title {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   .home-title {
-    font-size: 2.7rem;
-    line-height: 55px;
-    width: 100%;
-    min-height: 200px;
+    font-size: 2.4rem;
+    min-height: 135px;
   }
 
   .home-subtitle {
-    font-size: 2.1rem;
-  }
-
-  .home p {
-    width: 100%;
+    font-size: 2rem;
   }
 
   #typing-text {
     display: inline-block;
+    min-width: 280px;
   }
 
   .subtitle {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+  }
+
+  .cards,
+  .skills-cards,
+  .certification-container {
+    grid-template-columns: 1fr;
   }
 
   .about-info {
     flex-wrap: wrap;
   }
 
-  .about-card{
+  .about-card {
     width: 100%;
   }
-
-  .cards,
-  .skills-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .card img {
-    height: 240px;
-  }
-
-  .certification-container {
-        grid-template-columns: 1fr;
-    }
 
   .input-row {
     flex-direction: column;
@@ -1323,10 +1333,6 @@ input {
     flex-direction: column;
     gap: 18px;
     text-align: center;
-  }
-
-  .footer-links {
-    flex-wrap: wrap;
   }
 
   .left-reveal,
@@ -1340,67 +1346,78 @@ input {
   }
 }
 
-/* Large Mobile Screen */
-@media (max-width: 425px) {
+/* Mobile */
+@media (max-width: 576px) {
   .navbar {
     padding: 14px 0;
   }
 
   .nav-container {
-    padding: 0 20px;
+    padding: 0 18px;
   }
 
   .logo {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .nav-a {
     top: 72px;
-    right: 20px;
-    width: calc(100% - 40px);
+    right: 18px;
+    width: calc(100% - 36px);
+    align-items: center;
   }
 
   .home,
-.about,
-.project,
-.experience,
-.skills,
-.education,
-.certifications,
-.contact {
-  padding: 150px 20px 80px;
-}
+  .about,
+  .project,
+  .experience,
+  .skills,
+  .education,
+  .certifications,
+  .contact {
+    padding: 140px 18px 80px;
+  }
 
   .title {
-    font-size: var(--fs-xl);
+    font-size: 2rem;
+  }
+
+  .hire-text {
+    font-size: 0.65rem;
   }
 
   .home-title {
-    font-size: 2rem;
-    line-height: 42px;
-    min-height: 150px;
+    font-size: 1.9rem;
+    line-height: 1.35;
+    min-height: 120px;
   }
 
   .home-subtitle {
-    font-size: var(--fs-lg);
-    line-height: 34px;
+    font-size: 1.45rem;
+    line-height: 1.4;
   }
 
   #typing-text {
     display: block;
-    margin-top: 5px;
+    min-width: 0;
     min-height: 42px;
+    margin-top: 4px;
   }
 
-  .home p {
+  .home p,
+  .para,
+  .card-details,
+  .e-description,
+  .skills-subtitle,
+  .contact-description {
     font-size: 0.84rem;
-    line-height: 25px;
+    line-height: 1.7;
   }
 
   .primary-btn,
   .secondary-btn {
     width: 100%;
-    margin-bottom: 14px;
+    margin: 0 0 14px;
   }
 
   .card {
@@ -1412,24 +1429,19 @@ input {
   }
 
   .card-title,
-  .e-role {
-    font-size: var(--fs-md);
-  }
-
-  .card-details,
-  .e-description {
-    font-size: 0.82rem;
-    line-height: 22px;
-  }
-
-  .filter {
-    gap: 10px;
+  .e-role,
+  .edu-degree {
+    font-size: 1.15rem;
   }
 
   .filter-btn {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     padding: 6px 12px;
     margin-bottom: 10px;
+  }
+
+  .skill-card {
+    min-height: 150px;
   }
 
   .contact-box {
@@ -1441,72 +1453,35 @@ input {
     align-items: flex-start;
   }
 
-  .contact-icon {
-    height: 52px;
-    width: 52px;
-  }
-
   .map iframe {
     height: 240px;
   }
 
   .footer {
-    padding: 24px 20px;
-  }
-
-  .top-btn {
-    right: 16px;
-    bottom: 16px;
-    height: 40px;
-    width: 40px;
+    padding: 24px 18px;
   }
 }
 
-/* Small Mobile Screen */
-@media (max-width: 320px) {
+/* Extra Small Mobile */
+@media (max-width: 360px) {
   .logo {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .title {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
 
   .home-title {
-    font-size: 1.7rem;
-    line-height: 36px;
-    min-height: 120px;
+    font-size: 1.6rem;
   }
 
   .home-subtitle {
-    font-size: 1.3rem;
-  }
-
-  #typing-text {
-    display: block;
-    min-height: 36px;
-  }
-
-  .home p {
-    font-size: 0.78rem;
-    line-height: 22px;
+    font-size: 1.25rem;
   }
 
   .card img {
     height: 170px;
-  }
-
-  .card-title,
-  .e-role {
-    font-size: 1.05rem;
-  }
-
-  .skill-name {
-    font-size: 1.1rem;
-  }
-
-  .contact-details p {
-    font-size: 0.7rem;
   }
 
   .primary-btn,
@@ -1515,14 +1490,9 @@ input {
     font-size: 0.7rem;
     padding: 12px;
   }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .reveal,
-  .left-reveal,
-  .right-reveal {
-    transition: none;
-    transform: none;
-    opacity: 1;
+  .contact-details p,
+  .social-link {
+    font-size: 0.72rem;
   }
 }
