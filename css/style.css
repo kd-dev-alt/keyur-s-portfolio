@@ -192,7 +192,10 @@ img {
 }
 
 .menu-toggle {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
   height: 42px;
   width: 42px;
   border-radius: 8px;
@@ -1195,12 +1198,6 @@ input {
 
 /* Tablet / Small Laptop */
 @media (max-width: 1024px) {
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .nav-btn {
     display: none;
   }
