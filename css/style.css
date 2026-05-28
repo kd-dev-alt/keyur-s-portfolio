@@ -1202,6 +1202,10 @@ input {
     display: none;
   }
 
+  .menu-toggle {
+    display: flex;
+  }
+
   .nav-a {
     position: absolute;
     top: 78px;
