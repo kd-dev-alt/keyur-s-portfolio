@@ -156,7 +156,6 @@ img {
 
 .nav-a a:hover {
   color: var(--primary-color);
-  transform: translateY(-3px);
 }
 
 .nav-a a:hover::after {
@@ -166,6 +165,7 @@ img {
 .nav-a a.active {
   color: var(--primary-color);
   font-weight: 700;
+  transform: translateY(-4px);
 }
 
 .nav-a a.active::after {
@@ -1197,6 +1197,8 @@ input {
 @media (max-width: 1024px) {
   .menu-toggle {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-btn {
