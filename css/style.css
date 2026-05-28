@@ -195,7 +195,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: none; */
+  display: none;
   height: 42px;
   width: 42px;
   border-radius: 8px;
