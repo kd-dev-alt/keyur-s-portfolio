@@ -1,3 +1,5 @@
+const menuToggle = document.getElementById("menu-toggle");
+const navA = document.getElementById("nav-a");
 const topBtn = document.getElementById("top-btn");
 
 const revealItems = document.querySelectorAll(
@@ -37,3 +39,21 @@ if (topBtn) {
     });
   });
 }
+
+
+menuToggle.addEventListener("click", () => {
+  navA.classList.toggle("active");
+
+  if (navA.classList.contains("active")) {
+    menuToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+  } else {
+    menuToggle.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  }
+});
+
+document.querySelectorAll(".nav-a a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navA.classList.remove("active");
+    menuToggle.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+  });
+});
