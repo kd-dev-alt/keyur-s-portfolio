@@ -31,19 +31,22 @@ This portfolio showcases my frontend development projects, skills, internship ex
 
 ## ✨ Features
 
-- Modern & Clean UI Design
-- Fully Responsive Layout
-- Smooth Scroll Navigation
-- Animated Reveal Effects
-- Typing Text Animation
-- Skills Filter System
-- Interactive Project Cards
-- Mobile Hamburger Menu
+- Modern & Professional Portfolio Design
+- Fully Responsive Across All Devices
+- Dynamic Typing Animation
+- Scroll-Based Active Navigation
+- Smooth Section Reveal Animations
+- Project Showcase & Archive Page
+- Skills Filtering System
+- Internship Experience Timeline
+- Education & Certification Showcase
+- Resume Download Functionality
+- Interactive Contact Form
+- Google Maps Integration
+- Social & Professional Profile Links
+- Mobile-Friendly Navigation Menu
 - Scroll To Top Button
-- Resume Download Button
-- Certifications & Experience Sections
-- Contact Section with Google Maps
-- Optimized for Mobile, Tablet & Desktop
+- Optimized Performance & Clean Code Structure
 
 ---
 
@@ -69,7 +72,8 @@ Keyur-s-Portfolio/
 │   └── style.css
 │
 ├── js/
-│   └── script.js
+│   ├── script.js
+│   └── projects.js
 │
 ├── assets/
 │   │
@@ -83,6 +87,8 @@ Keyur-s-Portfolio/
 │   │   ├── quiz-app.png
 │   │   ├── responsive-webpage.png
 │   │   ├── todo-list-app.png
+│   │   ├── nayepankh-foundation.png
+│   │   ├── she-can-foundation.png
 │   │   └── keyur.png
 │   │
 │   ├── icons/
@@ -96,6 +102,26 @@ Keyur-s-Portfolio/
 
 ---
 ## 📌 Featured Projects
+
+### 🌍 NayePankh Foundation — NGO Website
+
+A responsive multi-page NGO website featuring dark mode, impact counters, volunteer application forms, FAQ section, contact page, and modern UI.
+
+**Tech Stack:** HTML, CSS, JavaScript  
+**Live Demo:** https://kd-dev-alt.github.io/NayePankh-Foundation/  
+**GitHub:** https://github.com/KD-dev-alt/NayePankh-Foundation
+
+---
+
+### 💜 She Can Foundation — NGO Website
+
+A modern NGO website focused on women empowerment featuring dark mode, interactive UI, animations, toast notifications, and smooth user experience.
+
+**Tech Stack:** HTML, CSS, JavaScript  
+**Live Demo:** https://kd-dev-alt.github.io/She-Can-Foundation/  
+**GitHub:** https://github.com/KD-dev-alt/She-Can-Foundation
+
+---
 
 ### 🍕 FoodiePizza App
 A responsive pizza ordering website with a clean UI, interactive food cards, categorized menu sections, and mobile-friendly layout.
@@ -170,7 +196,7 @@ This project is open source and available under the MIT License.
 
 **Keyur Dobariya**
 
-Frontend Developer
+Frontend & Web Developer 
 
 - Portfolio: https://kd-dev-alt.github.io/Keyur-s-Portfolio/
 - GitHub: https://github.com/KD-dev-alt
