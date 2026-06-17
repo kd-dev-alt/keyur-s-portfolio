@@ -624,8 +624,9 @@
                     </div>
 
                     <div class="input-group">
-                        <label>SUBJECT</label>
-                        <input type="text" name="subject" required>
+                        <label>CONTACT NUMBER</label>
+                        <input type="text" name="phone" maxlength="10" pattern="[0-9]{10}"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
                     </div>
 
                     <div class="input-group">
